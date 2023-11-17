@@ -1,0 +1,123 @@
+.slider {
+    background-color: #e0e0e0;
+}
+.slider__window {
+    margin: auto;
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+}
+.slider__line {
+    transition: all 1s;
+    display: flex;
+    gap: 10px;
+    width: 4840px;
+    flex-direction: row;
+}
+
+.slide {
+    width: 1200px;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.slide_1 {
+    background-image: url('../img/slider/slide_1.jpg');
+    background-position-y: -180px;
+}
+.slide_2 {
+    background-image: url('../img/slider/slide_2.jpg');
+    background-position-y: -180px;
+}
+.slide_3 {
+    background-image: url('../img/slider/slide_3.jpg');
+}
+.slide_4 {
+    background-image: url('../img/slider/slide_4.jpg');
+    background-position-y: 80%;
+}
+.slide p {
+    font-size: 20px;
+    margin: 10px;
+    color: #000000;
+    text-align: center;
+}
+.arrow__left {
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+    top: 40%;
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/slider/arrow_left.png');
+}
+.arrow__right {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/slider/arrow_right.png');
+}
+
+@media screen and (max-width: 1200px) {
+   .slider__window {
+    width: 992px;
+   }
+   .slider__line {
+    width: 4008px;
+   }
+   .slide{
+    width: 992px;
+   }
+}
+
+@media screen and (max-width: 992px) {
+    .slider__window {
+     width: 768px;
+    }
+    .slider__line{
+        width: 3112px;
+    }
+    .slide{
+     width: 768px;
+    }
+    .slide p {
+        font-size: 1em;
+    }
+ }
+ @media screen and (max-width: 768px) {
+    .slider__window {
+        width: 320px;
+        height: 200px;
+       }
+       .slider__line{
+           width: 1320px;
+       }
+       .slide{
+        width: 320px;
+        height: 200px;
+       }
+       .slide p {
+        height: 50px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+       }
+       .slide_1 {
+        background-image: url('../img/slider/slide_1-320.jpg');
+        background-position-y: 0;
+        }
+        .slide_2 {
+            background-image: url('../img/slider/slide_2.-320jpg.jpg');
+            background-position-y: 0;
+        }
+        .slide_3 {
+            background-image: url('../img/slider/slide_3-320.jpg');
+        }
+        .slide_4 {
+            background-image: url('../img/slider/slide_4-320.jpg');
+            background-position-y: 0;
+        }
+ }
